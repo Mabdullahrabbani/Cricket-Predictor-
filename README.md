@@ -18,6 +18,9 @@ Beyond raw numbers, the system includes an AI layer that explains each predictio
 plain, human-readable language via an API call — so instead of just seeing "68% win
 probability," you get context on *why* (required run rate, wickets in hand, momentum, etc).
 
+This project is API-only — there is no custom frontend. All predictions are accessed
+through REST endpoints, testable via FastAPI's built-in Swagger UI.
+
 ## Tech Stack
 
 - **Backend:** FastAPI
