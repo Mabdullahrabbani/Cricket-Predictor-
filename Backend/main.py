@@ -4,12 +4,9 @@ import pandas as pd
 import schemas
 import joblib
 from utilis import Generate_Description
-from fastapi.responses import JSONResponse
 app = FastAPI()
 
-@app.exception_handler(Exception)
-async def show_error(request, exc):
-    return JSONResponse(status_code=500, content={"detail": f"{type(exc).__name__}: {exc}"})
+
 try:
     with open("next_over_runs_model.pkl" , 'rb') as f:
         Next_Over_Runs_Model  = joblib.load(f)
