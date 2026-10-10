@@ -1,9 +1,19 @@
-
 venv/
+.venv/
+env/
+
+.env
+.env.*
 
 __pycache__/
-*.pyc
-.env
+*.py[cod]
+*.egg-info/
 
-.DS_Store
 .vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+.vercel/
+
+.streamlit/secrets.toml
